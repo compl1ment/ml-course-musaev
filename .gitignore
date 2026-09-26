@@ -1,0 +1,6 @@
+.venv/
+.work/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+drive-download/

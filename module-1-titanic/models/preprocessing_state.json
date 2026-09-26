@@ -1,0 +1,17 @@
+{
+  "age_by_group": {
+    "1|female": 35.0,
+    "1|male": 40.0,
+    "2|female": 29.0,
+    "2|male": 30.0,
+    "3|female": 21.5,
+    "3|male": 26.0
+  },
+  "age_median": 28.5,
+  "fare_median": 14.4542,
+  "embarked_mode": "S",
+  "sex_mapping": {
+    "female": 0,
+    "male": 1
+  }
+}

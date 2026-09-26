@@ -1,0 +1,12 @@
+[
+  "Pclass",
+  "Sex_Encoded",
+  "Age",
+  "SibSp",
+  "Parch",
+  "Fare",
+  "Family_Size",
+  "Is_Alone",
+  "Embarked_Q",
+  "Embarked_S"
+]

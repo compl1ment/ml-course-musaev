@@ -1,0 +1,9 @@
+{
+  "dataset": "Kaggle Titanic",
+  "random_state": 42,
+  "test_size": 0.2,
+  "n_train": 712,
+  "n_validation": 179,
+  "pandas_version": "3.0.6",
+  "scikit_learn_version": "1.9.1"
+}
