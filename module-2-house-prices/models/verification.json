@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "notebook_sections": 14,
+  "executed_code_cells": 10,
+  "validation_predictions": 292,
+  "demo_houses": 5,
+  "kaggle_predictions": 1459,
+  "metrics_recomputed": true,
+  "saved_models_match": true,
+  "training_only_frontage_statistics": true,
+  "unknown_category_and_partial_input": true
+}
