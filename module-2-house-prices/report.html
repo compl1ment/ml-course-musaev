@@ -14568,8 +14568,8 @@ memory usage: 924.0 KB
 <td>0.007015</td>
 <td>[0.1315349718537251, 0.12341715769461337, 0.11...</td>
 <td>{}</td>
-<td>0.090911</td>
-<td>0.787211</td>
+<td>0.094367</td>
+<td>0.759001</td>
 </tr>
 <tr>
 <th>ridge</th>
@@ -14577,8 +14577,8 @@ memory usage: 924.0 KB
 <td>0.004472</td>
 <td>[0.11911528941908466, 0.1165156353454703, 0.10...</td>
 <td>{'regressor__alpha': 100}</td>
-<td>0.084532</td>
-<td>3.34516</td>
+<td>0.079243</td>
+<td>3.27871</td>
 </tr>
 <tr>
 <th>lasso</th>
@@ -14586,8 +14586,8 @@ memory usage: 924.0 KB
 <td>0.00398</td>
 <td>[0.1114272361825282, 0.11054427010456276, 0.10...</td>
 <td>{'regressor__alpha': 0.003}</td>
-<td>0.093339</td>
-<td>7.190513</td>
+<td>0.09229</td>
+<td>7.073631</td>
 </tr>
 <tr>
 <th>elasticnet</th>
@@ -14595,8 +14595,8 @@ memory usage: 924.0 KB
 <td>0.004069</td>
 <td>[0.11247079228078322, 0.11074371826637801, 0.1...</td>
 <td>{'regressor__alpha': 0.003, 'regressor__l1_rat...</td>
-<td>0.170885</td>
-<td>12.474863</td>
+<td>0.16512</td>
+<td>12.470473</td>
 </tr>
 </tbody>
 </table>
@@ -14641,7 +14641,7 @@ memory usage: 924.0 KB
 <div class="output_area">
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Stacking обучен за 8.853 с; основная модель остаётся lasso
+<pre>Stacking обучен за 8.812 с; основная модель остаётся lasso
 </pre>
 </div>
 </div>
@@ -14744,7 +14744,7 @@ Kaggle <code>test.csv</code> используется только для про
 <td>13648.6905</td>
 <td>0.9439</td>
 <td>0.9504</td>
-<td>0.0909</td>
+<td>0.0944</td>
 </tr>
 <tr>
 <th>ridge</th>
@@ -14755,7 +14755,7 @@ Kaggle <code>test.csv</code> используется только для про
 <td>14375.1031</td>
 <td>0.9371</td>
 <td>0.9474</td>
-<td>0.0845</td>
+<td>0.0792</td>
 </tr>
 <tr>
 <th>lasso</th>
@@ -14766,7 +14766,7 @@ Kaggle <code>test.csv</code> используется только для про
 <td>13663.0166</td>
 <td>0.9423</td>
 <td>0.9419</td>
-<td>0.0933</td>
+<td>0.0923</td>
 </tr>
 <tr>
 <th>elasticnet</th>
@@ -14777,7 +14777,7 @@ Kaggle <code>test.csv</code> используется только для про
 <td>13641.2508</td>
 <td>0.9426</td>
 <td>0.9436</td>
-<td>0.1709</td>
+<td>0.1651</td>
 </tr>
 <tr>
 <th>stacking_bonus</th>
@@ -14788,7 +14788,7 @@ Kaggle <code>test.csv</code> используется только для про
 <td>13588.2101</td>
 <td>0.9415</td>
 <td>0.9540</td>
-<td>8.8527</td>
+<td>8.8117</td>
 </tr>
 </tbody>
 </table>
@@ -15503,21 +15503,7 @@ Kaggle <code>test.csv</code> используется только для про
 <span class="c1"># Kaggle требует только идентификатор и цену каждого test-дома.</span>
 <span class="n">submission</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'Id'</span><span class="p">:</span> <span class="n">test_df</span><span class="p">[</span><span class="s1">'Id'</span><span class="p">],</span> <span class="s1">'SalePrice'</span><span class="p">:</span> <span class="n">kaggle_prices</span><span class="p">})</span>
 <span class="n">submission</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'submission.csv'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Локальная загрузка: совпало 5 из 5; Kaggle submission:'</span><span class="p">,</span> <span class="n">submission</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Сохранены:'</span><span class="p">,</span> <span class="p">[</span><span class="n">p</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">MODELS_DIR</span><span class="o">.</span><span class="n">iterdir</span><span class="p">())])</span>
 </pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Локальная загрузка: совпало 5 из 5; Kaggle submission: (1459, 2)
-Сохранены: ['best_model.pkl', 'enet_model.pkl', 'feature_cols.json', 'interpretation.json', 'lasso_model.pkl', 'lr_model.pkl', 'metadata.json', 'metrics.json', 'preprocessing_state.json', 'repository_verification.json', 'ridge_model.pkl', 'scaler.pkl', 'stacking_model.pkl', 'verification.json']
-</pre>
-</div>
 </div>
 </div>
 </div>
@@ -15577,7 +15563,6 @@ Kaggle <code>test.csv</code> используется только для про
 <span class="n">remote_verification</span><span class="p">[</span><span class="s1">'predictions_matched'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="p">(</span><span class="n">MODELS_DIR</span> <span class="o">/</span> <span class="s1">'repository_verification.json'</span><span class="p">)</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span>
     <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">remote_verification</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">'utf-8'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Источник:'</span><span class="p">,</span> <span class="n">remote_verification</span><span class="p">[</span><span class="s1">'source'</span><span class="p">],</span> <span class="s1">'| совпало 3 из 3'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -15590,8 +15575,13 @@ Kaggle <code>test.csv</code> используется только для про
 <pre>Id 917 | до: 53883.57 | после: 53883.57
 Id 412 | до: 140182.83 | после: 140182.83
 Id 1178 | до: 117167.48 | после: 117167.48
-Источник: GitHub raw | совпало 3 из 3
 </pre>
+</div>
+</div>
+<div class="output_area">
+<div class="prompt output_prompt">Out[10]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>107</pre>
 </div>
 </div>
 </div>
@@ -15604,10 +15594,8 @@ Id 1178 | до: 117167.48 | после: 117167.48
 <li>Сравнены четыре обязательные модели и дополнительный Stacking.</li>
 <li>Основная модель по CV: <strong>lasso</strong>.</li>
 <li>Holdout: R² log <strong>0.9250</strong>, R² USD <strong>0.9423</strong>, RMSE USD <strong>$21,033</strong>.</li>
-<li>Финальный fit основной модели занял <strong>0.0933 с</strong>; поиск параметров учитывается отдельно.</li>
+<li>Финальный fit основной модели занял <strong>0.0923 с</strong>; поиск параметров учитывается отдельно.</li>
 <li>Выполнены шесть EDA-графиков, создана функция прогноза и проверены пять домов.</li>
-<li>Модели, подготовка данных и 1459 Kaggle-прогнозов сохранены; локальная загрузка даёт те же результаты.</li>
-<li>GitHub raw: совпало три прогноза из трёх.</li>
 </ul>
 <h3 id="%D0%A2%D1%80%D1%83%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B8-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F">Трудности и ограничения<a class="anchor-link" href="#%D0%A2%D1%80%D1%83%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B8-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F">¶</a></h3><p>Смысловые пропуски нельзя заполнять одним способом для всех полей. Редкие районы
 и материалы могут отсутствовать в отдельном CV-фолде; кодировщик обрабатывает
@@ -16202,8 +16190,8 @@ Id 1178 | до: 117167.48 | после: 117167.48
 <span class="c1"># Kaggle требует только идентификатор и цену каждого test-дома.</span>
 <span class="n">submission</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'Id'</span><span class="p">:</span> <span class="n">test_df</span><span class="p">[</span><span class="s1">'Id'</span><span class="p">],</span> <span class="s1">'SalePrice'</span><span class="p">:</span> <span class="n">kaggle_prices</span><span class="p">})</span>
 <span class="n">submission</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'submission.csv'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Локальная загрузка: совпало 5 из 5; Kaggle submission:'</span><span class="p">,</span> <span class="n">submission</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Сохранены:'</span><span class="p">,</span> <span class="p">[</span><span class="n">p</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">MODELS_DIR</span><span class="o">.</span><span class="n">iterdir</span><span class="p">())])</span>
+
+
 
 <span class="c1"># %%</span>
 <span class="c1"># Адрес относится к тому же репозиторию курса и папке второго модуля.</span>
@@ -16241,7 +16229,6 @@ Id 1178 | до: 117167.48 | после: 117167.48
 <span class="n">remote_verification</span><span class="p">[</span><span class="s1">'predictions_matched'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="p">(</span><span class="n">MODELS_DIR</span> <span class="o">/</span> <span class="s1">'repository_verification.json'</span><span class="p">)</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span>
     <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">remote_verification</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">'utf-8'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Источник:'</span><span class="p">,</span> <span class="n">remote_verification</span><span class="p">[</span><span class="s1">'source'</span><span class="p">],</span> <span class="s1">'| совпало 3 из 3'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
