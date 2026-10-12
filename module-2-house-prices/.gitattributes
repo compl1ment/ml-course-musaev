@@ -1,0 +1,3 @@
+# Preserve original dataset bytes so SHA-256 checks also work on Windows.
+data/*.csv -text
+data/data_description.txt -text
