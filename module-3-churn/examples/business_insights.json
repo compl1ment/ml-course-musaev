@@ -1,0 +1,70 @@
+{
+  "Contract": [
+    {
+      "Contract": "Month-to-month",
+      "mean": 0.4274661508704062,
+      "size": 3102
+    },
+    {
+      "Contract": "One year",
+      "mean": 0.11082693947144075,
+      "size": 1173
+    },
+    {
+      "Contract": "Two year",
+      "mean": 0.02869757174392936,
+      "size": 1359
+    }
+  ],
+  "InternetService": [
+    {
+      "InternetService": "DSL",
+      "mean": 0.1868869385647909,
+      "size": 1937
+    },
+    {
+      "InternetService": "Fiber optic",
+      "mean": 0.4208618606524366,
+      "size": 2483
+    },
+    {
+      "InternetService": "No",
+      "mean": 0.07248764415156507,
+      "size": 1214
+    }
+  ],
+  "OnlineSecurity": [
+    {
+      "OnlineSecurity": "No",
+      "mean": 0.4193779048981051,
+      "size": 2797
+    },
+    {
+      "OnlineSecurity": "No internet service",
+      "mean": 0.07248764415156507,
+      "size": 1214
+    },
+    {
+      "OnlineSecurity": "Yes",
+      "mean": 0.14417744916820702,
+      "size": 1623
+    }
+  ],
+  "TechSupport": [
+    {
+      "TechSupport": "No",
+      "mean": 0.41753879465896787,
+      "size": 2771
+    },
+    {
+      "TechSupport": "No internet service",
+      "mean": 0.07248764415156507,
+      "size": 1214
+    },
+    {
+      "TechSupport": "Yes",
+      "mean": 0.15160703456640387,
+      "size": 1649
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "source_hash_verified": true,
+  "train_only_preprocessing": true,
+  "metrics_recomputed": true,
+  "saved_models_match": true,
+  "selection_uses_cv": true,
+  "unknown_categories": true,
+  "optuna_trials": 30,
+  "shap_additivity": true,
+  "notebook_sections": 14,
+  "executed_cells": 9,
+  "holdout_clients": 1409,
+  "figures": 11,
+  "best_model": "lightgbm_optuna",
+  "confusion_matrix": [
+    [
+      941,
+      94
+    ],
+    [
+      183,
+      191
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.8371886120996441,
+      "recall": 0.9091787439613527,
+      "f1-score": 0.8716998610467809,
+      "support": 1035.0
+    },
+    "1": {
+      "precision": 0.6701754385964912,
+      "recall": 0.5106951871657754,
+      "f1-score": 0.5796661608497724,
+      "support": 374.0
+    },
+    "accuracy": 0.8034066713981547,
+    "macro avg": {
+      "precision": 0.7536820253480676,
+      "recall": 0.7099369655635641,
+      "f1-score": 0.7256830109482766,
+      "support": 1409.0
+    },
+    "weighted avg": {
+      "precision": 0.7928572232492684,
+      "recall": 0.8034066713981547,
+      "f1-score": 0.7941834636914359,
+      "support": 1409.0
+    }
+  }
+}

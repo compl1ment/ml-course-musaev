@@ -1,0 +1,19 @@
+{
+  "n_trials": 30,
+  "seed": 42,
+  "best_value": 0.8500071333663153,
+  "best_params": {
+    "max_depth": 3,
+    "n_estimators": 100,
+    "num_leaves": 6,
+    "learning_rate": 0.05390624989695454,
+    "min_child_samples": 52,
+    "subsample": 0.9520991579264776,
+    "colsample_bytree": 0.6635431448102718,
+    "reg_alpha": 0.00516694384743998,
+    "reg_lambda": 7.037378256052875,
+    "class_weight": null
+  },
+  "best_trial": 19,
+  "search_time_sec": 22.776898399999936
+}

@@ -1,0 +1,12 @@
+{
+  "github_verified": false,
+  "remote_ref": "main",
+  "source": "local",
+  "reason": "network_check_disabled",
+  "predictions_matched": 3,
+  "probabilities": [
+    0.05066453988662332,
+    0.7143465180371612,
+    0.08355394907799812
+  ]
+}
