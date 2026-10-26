@@ -11,7 +11,7 @@
   "notebook_sections": 14,
   "executed_cells": 9,
   "holdout_clients": 1409,
-  "figures": 11,
+  "figures": 12,
   "best_model": "lightgbm_optuna",
   "confusion_matrix": [
     [

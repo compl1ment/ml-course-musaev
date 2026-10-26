@@ -131,9 +131,12 @@ def main():
     assert [cell.execution_count for cell in code] == list(range(1, len(code) + 1))
     assert not any(out.output_type == 'error' for cell in code for out in cell.outputs)
     assert not any(token in cell.source for token in ['{{EDA}}', '{{SHAP}}', '{{CONCLUSIONS}}', '{{COMPARISON}}'] for cell in notebook.cells)
+    appendix = notebook.cells[-1].source
+    for filename in ['churn_pipeline.py', 'lab_workflow.py']:
+        assert (ROOT / filename).read_text(encoding='utf-8') in appendix
     figures = ['eda_plots.png', 'missing_values.png', 'roc_curves.png', 'confusion_matrix.png',
         'feature_importance.png', 'optuna_history.png', 'calibration.png',
-        'shap_summary.png', 'shap_bar.png', 'shap_waterfall.png', 'shap_dependence.png']
+        'shap_summary.png', 'shap_bar.png', 'shap_waterfall.png', 'shap_dependence.png', 'metrics_table.png']
     assert all((ROOT / 'examples' / name).stat().st_size > 1000 for name in figures)
     report = {'status': 'passed', 'source_hash_verified': True, 'train_only_preprocessing': True,
         'metrics_recomputed': True, 'saved_models_match': True, 'selection_uses_cv': True,

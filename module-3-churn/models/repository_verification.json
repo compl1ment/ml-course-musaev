@@ -1,8 +1,7 @@
 {
-  "github_verified": false,
-  "remote_ref": "main",
-  "source": "local",
-  "reason": "network_check_disabled",
+  "github_verified": true,
+  "remote_ref": "90bbedf9683f5d5c55a0fecd9bbe58cd0928a66a",
+  "source": "GitHub raw",
   "predictions_matched": 3,
   "probabilities": [
     0.05066453988662332,
